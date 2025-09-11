@@ -1,14 +1,14 @@
 variable "aws_region" {
   description = "AWS region"
-  default = "us-east-2"
+  default     = "us-east-1"   # ✅ your Jenkins is in us-east-1
 }
 
 variable "aws_type" {
-  description = "AWS ec2 type"
-  default = "t3.medium"
+  description = "AWS EC2 instance type"
+  default     = "t3.medium"
 }
 
 variable "aws_ami" {
-  description = "AWS ami"
-  default = "ami-0dba2cb6798deb6d8"
+  description = "AWS AMI for Amazon Linux 2 (x86_64)"
+  default     = "ami-0c02fb55956c7d316"   # ✅ latest Amazon Linux 2 for us-east-1
 }
